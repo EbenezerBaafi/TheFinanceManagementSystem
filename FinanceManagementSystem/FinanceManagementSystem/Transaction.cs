@@ -9,7 +9,7 @@ namespace FinanceManagementSystem
     public class Transaction
     {
         public int Id;
-        public DateTime DateTime { get; init; }
+        public DateTime Date { get; init; }
         public decimal Amount { get; init; }
         public string Category { get; init; }
     }

@@ -8,7 +8,7 @@ namespace FinanceManagementSystem
 { 
     public class FinanceApp
     {
-        private List<Transaction> _transactions;
+        private List<Transaction> _transactions = new List<Transaction>();
 
         public void Run()
         {
@@ -19,21 +19,21 @@ namespace FinanceManagementSystem
             var transaction1 = new Transaction
             {
                 Id = 1,
-                DateTime = DateTime.Now,
+                Date = DateTime.Now,
                 Amount = 100.00m,
                 Category = "Groceries"
             };
             var transaction2 = new Transaction
             {
                 Id = 2,
-                DateTime = DateTime.Now,
+                Date = DateTime.Now,
                 Amount = 50.00m,
                 Category = "Utilities"
             };
             var transaction3 = new Transaction
             {
                 Id = 3,
-                DateTime = DateTime.Now,
+                Date = DateTime.Now,
                 Amount = 200.00m,
                 Category = "Entertainment"
             };
