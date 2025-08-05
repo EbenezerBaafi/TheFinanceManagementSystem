@@ -27,7 +27,15 @@ namespace FinanceManagementSystem
         {
             Console.WriteLine($"Processed mobile money transaction of GHS {transaction.Amount:F2} for {transaction.Category}");
         }
-        
+
     }
 
+    public class CryptoWalletProcessor : ITransactionProcessor
+    {
+        public void Process(Transaction transaction)
+        {
+            Console.WriteLine($"Processed cryptocurrency transaction of GHS {transaction.Amount:F2} for {transaction.Category}");
+        }
+
+    }
 }
